@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".person"
+    android:background="@color/white">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="37dp"
+        android:layout_marginStart="35dp"
+        android:layout_marginEnd="35dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:layout_editor_absoluteX="0dp">
+
+        <ImageView
+            android:id="@+id/top_menu"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_gravity="center"
+            android:src="@drawable/menu1"
+            app:tint="@color/bg_color" />
+
+        <ImageView
+            android:layout_width="36dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="95dp"
+            android:layout_marginRight="85dp"
+            android:rotation="-15"
+            android:src="@drawable/logoback" />
+
+        <TextView
+            android:layout_width="58dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="@font/alegreya_sans_medium"
+            android:text="edit"
+            android:textAlignment="center"
+            android:textColor="@color/bg_color"
+            android:textSize="15dp" />
+    </LinearLayout>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="75dp"
+        android:layout_marginStart="113dp"
+        android:layout_marginEnd="113dp"
+        android:layout_marginTop="140dp"
+        android:layout_centerHorizontal="true"
+        android:innerRadius="0dp"
+        android:shape="ring"
+        android:thicknessRatio="1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/goku"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.cardview.widget.CardView>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Aaditya Rasala"
+        android:textColor="@color/bg_color"
+        android:fontFamily="@font/alegreya"
+        android:textSize="35dp"
+        android:layout_marginTop="300dp"
+        android:layout_marginStart="82dp"
+        android:layout_marginEnd="82dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Gujarat, India"
+        android:textColor="@color/bg_color"
+        android:fontFamily="@font/alegreya"
+        android:alpha="0.9"
+        android:textSize="20dp"
+        android:layout_marginTop="345dp"
+        android:layout_marginStart="135dp"
+        android:layout_marginEnd="135dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_profile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="400dp"
+        android:background="@color/bg_color"
+        app:itemTextColor="@color/white"
+        app:itemIconTint="@color/white"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:menu="@menu/profile_statenachi"
+        tools:layout_editor_absoluteX="0dp"
+        android:textAlignment="center"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="270dp"
+        android:layout_marginLeft="35dp"
+        android:layout_marginTop="480dp"
+        android:layout_marginRight="35dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Week State"
+                android:textColor="@color/bg_color"
+                android:textSize="22.5dp"
+                android:fontFamily="@font/alegreya_sans_medium"
+                />
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="270dp"
+                android:src="@drawable/bar"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Bedtime"
+                android:textColor="@color/bg_color"
+                android:textSize="22.5dp"
+                android:fontFamily="@font/alegreya_sans_medium"
+                />
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="270dp"
+                android:layout_marginTop="6dp"
+                android:src="@drawable/line"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Sleep Session"
+                android:layout_marginTop="16dp"
+                android:textColor="@color/bg_color"
+                android:textSize="22.5dp"
+                android:fontFamily="@font/alegreya_sans_medium"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center">
+                <Button
+                    android:layout_width="80dp"
+                    android:layout_height="145dp"
+                    android:fontFamily="@font/alegreya_sans_medium"
+                    android:textSize="18dp"
+                    android:background="@drawable/pro_btn1"
+                    />
+                <Button
+                    android:layout_width="80dp"
+                    android:layout_height="145dp"
+                    android:fontFamily="@font/alegreya_sans_medium"
+                    android:textSize="18dp"
+                    android:background="@drawable/pro_btn2"
+                    android:layout_marginLeft="13dp"
+                    android:layout_marginRight="13dp"/>
+                <Button
+                    android:layout_width="80dp"
+                    android:layout_height="145dp"
+                    android:fontFamily="@font/alegreya_sans_medium"
+                    android:textSize="18dp"
+                    android:background="@drawable/pro_btn3"/>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
